@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Tisha 🎂</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#171717,#3b2035,#151515);
+    overflow:hidden;
+    color:white;
+}
+
+.card{
+    width:90%;
+    max-width:390px;
+    max-height:92vh;
+    overflow-y:auto;
+    padding:30px 20px;
+    text-align:center;
+    border-radius:28px;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(12px);
+    box-shadow:0 0 35px rgba(255,105,180,.3);
+    position:relative;
+    z-index:5;
+}
+
+.cat{
+    font-size:85px;
+    animation:bounce 1.8s infinite;
+}
+
+@keyframes bounce{
+
+    0%,100%{
+        transform:translateY(0) rotate(-3deg);
+    }
+
+    50%{
+        transform:translateY(-12px) rotate(3deg);
+    }
+
+}
+
+h1{
+    font-size:34px;
+    margin:10px 0;
+    color:#ff9ed2;
+    text-shadow:0 0 15px #ff4fa3;
+}
+
+.subtitle{
+    font-size:15px;
+    opacity:.8;
+}
+
+.message{
+    margin:20px 0;
+    font-size:17px;
+    line-height:1.6;
+}
+
+button{
+    border:none;
+    padding:13px 22px;
+    margin:6px;
+    border-radius:30px;
+    background:#ff5ca8;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 0 20px rgba(255,92,168,.6);
+}
+
+button:active{
+    transform:scale(.95);
+}
+
+#surprise{
+    display:none;
+    margin-top:20px;
+    font-size:17px;
+    line-height:1.7;
+    animation:pop .5s ease;
+    text-align:center;
+}
+
+@keyframes pop{
+
+    from{
+        transform:scale(.5);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+
+.heart{
+    position:fixed;
+    top:-30px;
+    animation:fall linear forwards;
+    z-index:1;
+    pointer-events:none;
+}
+
+@keyframes fall{
+
+    to{
+        transform:translateY(110vh) rotate(360deg);
+        opacity:0;
+    }
+
+}
+
+.footer{
+    margin-top:18px;
+    font-size:12px;
+    opacity:.55;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="card">
+
+    <!-- Funny Cat -->
+    <div class="cat">😼</div>
+
+
+    <!-- Birthday Title -->
+    <h1>
+        HAPPY BIRTHDAY<br>
+        TISHA 🎂
+    </h1>
+
+
+    <div class="subtitle">
+        ⚠️ Birthday Cat has entered the chat!
+    </div>
+
+
+    <!-- Main Message -->
+    <div class="message">
+
+        Happy Birthday Tisha! 🥳💗
+
+        <br><br>
+
+        Tui ajke officially aro ek bochor boro hoye geli! 😭😂
+
+        <br><br>
+
+        Allah tor life-e onek happiness,
+        success ar bhalo bhalo biriyani dik. 🍗😂
+
+        <br><br>
+
+        Ar haan...
+        cake-er ekta piece amar jonno reserve rakhbi. 😼🎂
+
+    </div>
+
+
+    <!-- Surprise Button -->
+    <button onclick="openSurprise()">
+        OPEN UR SURPRISE 🎁
+    </button>
+
+
+    <!-- BIG SURPRISE MESSAGE -->
+    <div id="surprise">
+
+        😭💗 SURPRISEEEE!!! 💗😭
+
+        <br><br>
+
+        Oi Tisha! 🐈💀
+
+        <br><br>
+
+        Happy Birthday, amar most favourite janoar! 😂🎂
+
+        <br><br>
+
+        Tui honestly amar life-er ekta huge headache,
+        but somehow oi headache-ta chara abar life tao boring lage. 😭😂
+
+        <br><br>
+
+        Tor sathe joto jhogra, paglamo, gossip,
+        random kotha ar unnecessary hasahasi—
+        sobkichui amar favourite memories-er moddhe pore. 🥹💗
+
+        <br><br>
+
+        Tui jeno sobsomoy emni pagli thakis,
+        onek happy thakis,
+        ar tor sob dreams ek ek kore fulfill hok. ✨
+
+        <br><br>
+
+        Allah tor life-e onek shanti,
+        happiness, success ar bhalo bhalo din dik. 🤍
+
+        <br><br>
+
+        Ar shon—
+
+        <br>
+
+        boyosh barleo attitude komanor kono dorkar nai. 😭😂
+
+        <br>
+
+        Tui jemon achis, temoni thak.
+
+        <br>
+
+        Shudhu majhe majhe amar kotha shunbi. 😼
+
+        <br><br>
+
+        Ar cake-er kotha bhule gele kintu
+        friendship officially cancel. 🎂🔪😂
+
+        <br><br>
+
+        Anywayyy...
+
+        <br>
+
+        Happy Birthday once again, Bestie! 🥳💗
+
+        <br><br>
+
+        Stay happy. Stay crazy.
+
+        <br>
+
+        And please remain the same annoying human
+        that I somehow can't live without. 😭😂💗
+
+        <br><br>
+
+        — From your favourite person 😌✨
+
+    </div>
+
+
+    <div class="footer">
+        Made with chaos & friendship 😂
+    </div>
+
+</div>
+
+
+<!-- Music -->
+<!-- নিজের বৈধভাবে পাওয়া audio file হলে এখানে রাখবে -->
+<audio id="birthdayMusic" loop>
+    <source src="wanna-be-yours.mp3" type="audio/mpeg">
+</audio>
+
+
+<script>
+
+/* Falling Hearts */
+
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    const hearts = [
+        "💗",
+        "💖",
+        "💕",
+        "💘",
+        "❤️",
+        "🩷",
+        "✨"
+    ];
+
+    heart.className = "heart";
+
+    heart.innerHTML =
+        hearts[Math.floor(Math.random()*hearts.length)];
+
+    heart.style.left =
+        Math.random()*100 + "vw";
+
+    heart.style.animationDuration =
+        (3 + Math.random()*4) + "s";
+
+    heart.style.fontSize =
+        (15 + Math.random()*20) + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function(){
+
+        heart.remove();
+
+    },7000);
+
+}
+
+
+/* Continuous Falling Hearts */
+
+setInterval(createHeart,350);
+
+
+/* Surprise Button */
+
+function openSurprise(){
+
+    document.getElementById("surprise").style.display="block";
+
+
+    /* Music */
+
+    const music =
+        document.getElementById("birthdayMusic");
+
+    music.play().catch(function(){
+
+        console.log("Music could not play.");
+
+    });
+
+
+    /* Extra Hearts */
+
+    for(let i=0;i<40;i++){
+
+        setTimeout(function(){
+
+            createHeart();
+
+        },i*80);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
